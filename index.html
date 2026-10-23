@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagochi Oreo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="boot-screen" class="boot-screen">
+        <div class="tv-static-layer"></div>
+        <div class="boot-content">
+            <div class="boot-logo">gigi presents...</div>
+            <div class="boot-title" data-text="TAMAGOTCHI OREO">TAMAGOTCHI OREO</div>
+            <button id="start-game-btn" class="pop-button boot-btn">yayaya go</button>
+        </div>
+    </div>
+
+    <div id="thoughts-container" class="thoughts-container"></div>
+
+    <div class="container">
+        <h1>Welcome to Tamagochi Oreo's World!</h1>
+
+        <div class="tamagotchi-body">
+            <div class="brand-header">save oreo</div>
+            
+            <div class="screen-border">
+                <div id="game-screen" class="game-screen">
+                    
+                    <div class="stats-container">
+                        <div class="stat-row">
+                            <span class="stat-label">BOBAAA:</span>
+                            <div class="bar-border"><div id="boba-bar" class="bar-fill color-green"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">CODE:</span>
+                            <div class="bar-border"><div id="code-bar" class="bar-fill color-blue"></div></div>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">AWAKE:</span>
+                            <div class="bar-border"><div id="awake-border" class="bar-fill color-red"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="character-viewport">
+                        <div class="avatar-wrapper">
+                            <img id="tamagotchi-pic" src="cat.jpeg" alt="Tamagotchi" class="pixel-avatar-img">
+                        </div>
+                        <div id="status-bubble" class="status-bubble">LET'S CODE!</div>
+                    </div>
+
+                    <div class="score-display">
+                        TIME: <span id="time-score">03:00</span> AM
+                    </div>
+                    
+                    <div id="game-over-screen" class="game-over-screen hidden">
+                        <div class="game-over-text">GAME OVER AAA!</div>
+                        <div class="game-over-sub">OREO PASSED OUT ON THE KEYBOARD</div>
+                        <button id="restart-btn" class="pop-button restart-btn">REBOOT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls-grid">
+                <button id="btn-boba" class="pop-button action-btn">bobaaa!</button>
+                <button id="btn-code" class="pop-button action-btn">work work work</button>
+                <button id="btn-coffee" class="pop-button action-btn">drink coffeee</button>
+            </div>
+
+            <div class="speaker-grill">
+                <div class="grill-line"></div>
+                <div class="grill-line"></div>
+                <div class="grill-line"></div>
+            </div>
+        </div>
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
